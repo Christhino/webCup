@@ -52,7 +52,7 @@ export const postDream = async(messages) => {
 }
 
     
-const postDream = async(messages) => {
+/*const postDream = async(messages) => {
     try {
         await axios.post(POST_OPEN_IA,{
             model: 'gpt-3.5-turbo',
@@ -68,3 +68,4 @@ const postDream = async(messages) => {
         
     }
 }
+*/
