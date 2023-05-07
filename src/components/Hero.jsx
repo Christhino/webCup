@@ -17,12 +17,16 @@ const Hero = () => {
           </div>
 
           <div>
-            <h1 className={`${styles.heroHeadText} text-white titre`}>
-              <FormattedMessage id="header-part-1" />   <span className="text-[#915EFF]"><FormattedMessage id="header-part-2" /></span>
-            </h1>
+            <motion.h1 whileHover={{ scale:1.2 }}>  
+              <h1 className={`${styles.heroHeadText} text-white titre`}>
+                <FormattedMessage id="header-part-1" />   <span className="text-[#915EFF]"><FormattedMessage id="header-part-2" /></span>
+              </h1>
+            </motion.h1>
+            <motion.p whileHover={{ scale:1.2 }}> 
             <p className={`${styles.heroSubText} mt-2 text-white-100 intro`}>
               <FormattedMessage id="header-description-part-1" />  <br className="sm:block hidden" /> <FormattedMessage id="header-description-part-2" />
             </p>
+            </motion.p>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center mt-5">

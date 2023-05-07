@@ -15,6 +15,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 const ExperienceCard = ({ experience }) => {
   return (
+    
     <VerticalTimelineElement
       contentStyle={{
         background: "#1d1836",
@@ -33,26 +34,29 @@ const ExperienceCard = ({ experience }) => {
         </div>
       }
     >
-      <div>
-        <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
-        <p
-          className="text-secondary text-[16px] font-semibold"
-          style={{ margin: 0 }}
-        >
-          {experience.company_name}
-        </p>
-      </div>
-
-      <ul className="mt-5 list-disc ml-5 space-y-2">
-        {experience.points.map((point, index) => (
-          <li
-            key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1"
+     
+        <div>
+          <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+          <p
+            className="text-secondary text-[16px] font-semibold"
+            style={{ margin: 0 }}
           >
-            {point}
-          </li>
-        ))}
-      </ul>
+            {experience.company_name}
+          </p>
+       
+      
+        <ul className="mt-5 list-disc ml-5 space-y-2">
+          {experience.points.map((point, index) => (
+            <li
+              key={`experience-point-${index}`}
+              className="text-white-100 text-[14px] pl-1"
+            >
+              {point}
+            </li>
+          ))}
+        </ul>
+       </div>
+      
     </VerticalTimelineElement>
   );
 };
@@ -64,17 +68,21 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}><FormattedMessage id="onirix-workflow-subtitle"/></p>
-        <h2 className={styles.sectionHeadText}><FormattedMessage id="onirix-workflow-title"/></h2>
-      </motion.div>
+        <motion.p  whileHover={{ scale:1.2 }}>  <p className={styles.sectionSubText}><FormattedMessage id="onirix-workflow-subtitle"/></p> </motion.p>
+       
+        <motion.h2  whileHover={{ scale:1.2 }}> <h2 className={styles.sectionHeadText}><FormattedMessage id="onirix-workflow-title"/></h2> </motion.h2>
+        
 
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {(locale === 'fr' ? experiences : experiencesEnglish).map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
-        </VerticalTimeline>
-      </div>
+      </motion.div>
+    
+        <div className="mt-20 flex flex-col">
+          <VerticalTimeline>
+            {(locale === 'fr' ? experiences : experiencesEnglish).map((experience, index) => (
+              <ExperienceCard key={index} experience={experience} />
+            ))}
+          </VerticalTimeline>
+        </div>
+    
     </>
   );
 };

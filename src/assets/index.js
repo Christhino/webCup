@@ -47,7 +47,7 @@ import  brain from  "./brain.jpg"
 import  predicat  from "./mahita.jpg"
 import  onc from  "./onc.jpg"
 import iaRobot  from "./iaRobot.jpg"
-
+import  kalanoor  from  "./kalanoor.png"
 export {
   logo,
   thix,
@@ -55,7 +55,7 @@ export {
   predicat,
   onc,
   iaRobot,
-  
+  kalanoor,
   yeys,
   engenog,
   inclu,

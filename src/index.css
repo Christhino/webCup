@@ -272,26 +272,34 @@ body > .overlay > div {
   transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0s;
 }
 
-body > .overlay > div:nth-child(1) {
-  background-color: #0066FF;
+
+.overlay {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #042331;
 }
 
-body > .overlay > div:nth-child(2) {
-  background-color: #0e001a;
-  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0.3s;
+svg{
+  width: 100px;
+  height: 100px;
+}
+svg rect{
+  width: 100px;
+  height: 100px;
+  fill: none;
+  stroke-width: 100px;
+  stroke: #00adff;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 50%;
+  animation:  animate 2s  linear infinite;
+}
+@keyframes animate {
+  to{
+    stroke-dashoffset: 250%;
+  }
 }
 
-body > .overlay > div:nth-child(3) {
-  opacity: 0.3;
-  background-color: #DB00FF;
-  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
-}
-
-body > .overlay.loaded > div {
-  transform: translateY(-100%);
-}
-
-.tracking-wider {
-  color: transparent !important;
-  -webkit-text-stroke: .7px #FFF !important;
-}

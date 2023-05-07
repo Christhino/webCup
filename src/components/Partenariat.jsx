@@ -1,13 +1,34 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
-import { nexta,mndpt,novity,telma,full,pulse,ph,instit,eng,nect,inclu,engenog} from "../assets";
+import { nexta,mndpt,novity,telma,full,pulse,ph,instit,eng,nect,inclu,engenog,kalanoor} from "../assets";
 import { FormattedMessage } from "react-intl";
 
 const Partenaire = () => {
+  const [imageSources, setImageSources] = useState([
+    'eng.jpg',
+    'nect.jpg',
+    'engenog.jpg',
+    'inclu.jpg'
+  ]);
+   
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // Déplacez la première source d'image à la fin de la liste
+      setImageSources(prevSources => [
+        ...prevSources.slice(1),
+        prevSources[0]
+      ]);
+    }, 2000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -51,7 +72,7 @@ const Partenaire = () => {
             
             <div className="flex flex-col rounded-md justify-center items-center uppercase bg-white text-white hidden h-60 min-h-full 2xl:flex 2xl:row-span-2 2xl:col-span-1 2xl:col-start-6 2xl:row-start-1">
             
-            <img src={engenog} alt="nexta" className="w-full h-full object-contain rounded-md" />
+            <img src={kalanoor} alt="nexta" className="w-full h-full object-contain rounded-md" />
             </div>
         
         </div>
@@ -69,6 +90,7 @@ const Partenaire = () => {
             <img src={inclu} alt="mdpt" className="w-full h-full rounded-md object-contain" />
             </div>
         </div>
+      
       </div>
       
     </>
