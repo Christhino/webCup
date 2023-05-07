@@ -23,7 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
-   
+
   brain,
   predicat,
   onc,
@@ -118,6 +118,44 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+];
+
+const experiencesEnglish = [{
+  title: "Data Collection", company_name: "Starbucks", icon: starbucks, iconBg: "#383E56", date: "March 2020 - April 2021", points: ["First, Onirix collects data about its users' dreams using its data collection algorithms.", "These algorithms gather information such as dream type, associated emotions, and relevant details such as people, places, and objects involved in the dream.",],
+},
+{
+  title: "Data Analysis",
+  company_name: "Tesla",
+  icon: tesla,
+  iconBg: "#E6DEDD",
+  date: "Jan 2021 - Feb 2022",
+  points: [
+    "Once the data is collected, Onirix analyzes it using its data processing algorithms.",
+    "These algorithms look for patterns and connections in the data to identify hidden meanings in dreams.",
+  ],
+},
+{
+  title: "Results Interpretation",
+  company_name: "Shopify",
+  icon: shopify,
+  iconBg: "#383E56",
+  date: "Jan 2022 - Jan 2023",
+  points: [
+    "After analyzing the data, Onirix interprets the results to identify hidden meanings in dreams.",
+    "Researchers from the International Institute of Dreams work closely with Onirix to interpret the results and provide personalized prophetic predictions for each user.",
+  ],
+},
+{
+  title: "Personalized Results",
+  company_name: "Meta",
+  icon: meta,
+  iconBg: "#E6DEDD",
+  date: "Jan 2023 - Present",
+  points: [
+    "Finally, Onirix provides personalized results to each user based on the analysis and interpretation of their dream data.",
+    "Results include prophetic predictions to help users anticipate their future, as well as useful information about upcoming events.",
+  ],
+},
 ];
 
 const experiences = [
@@ -301,13 +339,13 @@ export const newFeatures = [
     imgUrl: '/vrpano.svg',
     title: 'A new world',
     subtitle:
-        'we have the latest update with new world for you to try never mind',
+      'we have the latest update with new world for you to try never mind',
   },
   {
     imgUrl: '/headset.svg',
     title: 'More realistic',
     subtitle:
-        'In the latest update, your eyes are narrow, making the world more realistic than ever',
+      'In the latest update, your eyes are narrow, making the world more realistic than ever',
   },
 ];
 
@@ -315,4 +353,4 @@ export const newFeatures = [
 
 
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, experiencesEnglish, testimonials, projects };
