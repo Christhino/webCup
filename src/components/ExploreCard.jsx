@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, OnMouseOver }) => (
+const ExploreCard = ({ id, imgUrl, title, index, active, OnMouseOver, job }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -26,14 +26,14 @@ const ExploreCard = ({ id, imgUrl, title, index, active, OnMouseOver }) => (
         <div
           className="flex justify-center items-center w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]"
         >
-          <img
+          {/* <img
             src="/headset.svg"
             alt="headset"
             className="w-1/2 h-1/2 object-contain"
-          />
+          /> */}
         </div>
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
-          Enter Metaverse
+          {job}
         </p>
         <h2 className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}

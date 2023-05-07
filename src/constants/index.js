@@ -305,28 +305,36 @@ const projects = [
   },
 ];
 
+const henimbola = "https://media.licdn.com/dms/image/C5603AQEe6rFkrXt1kg/profile-displayphoto-shrink_800_800/0/1600184379100?e=1689206400&v=beta&t=qOPb6M3CO5M2xOkjfm1khX_PSxkpBqL6sjQaCdxu31I";
+const christhino = "https://yt3.googleusercontent.com/ifZJFKoXaasijKlvMxM43d1lXCsvTjJgujLvEWCvv68e8rHKSg2OmixwdRBp_L_50uQBviQOHA=s900-c-k-c0x00ffffff-no-rj";
+const mahenina = "https://scontent.ftnr5-1.fna.fbcdn.net/v/t39.30808-6/271088005_1378803265883212_2977581742200704279_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeGoIgMTqNhTeOkVvP-DAnH-9kMTLWvpy_n2QxMta-nL-bzMVnZ6U9iRiBFdAJg7nQR1wR5BtsX2jLxrhgFfXOY1&_nc_ohc=CcUtLeEGRT0AX9HCBFm&_nc_ht=scontent.ftnr5-1.fna&oh=00_AfCzGZ4gDtGsv71NQqvpm0fs-JVB0LVcN1jAS8qfoZKsTQ&oe=645B25A7";
+const pappaReact = "https://media.licdn.com/dms/image/C4D03AQH-UgwgBR6f3A/profile-displayphoto-shrink_800_800/0/1616768632912?e=1689206400&v=beta&t=l3YVuRimEVnQUSNVwbapipiz2rkRNTVE8bdjWPVtQhA";
 
 
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: brain,
-    title: 'The Hogwarts',
+    imgUrl: henimbola,
+    job: 'Backend Developer',
+    title: 'Henimbola',
   },
   {
     id: 'world-2',
-    imgUrl: predicat,
-    title: 'The Upside Down',
+    imgUrl: christhino,
+    job: 'Integrator',
+    title: 'Christhino',
   },
   {
     id: 'world-3',
-    imgUrl: onc,
-    title: 'Kadirojo Permai',
+    imgUrl: mahenina,
+    job: 'Designer',
+    title: 'Mahenina',
   },
   {
     id: 'world-4',
-    imgUrl: iaRobot,
-    title: 'Paradise Island',
+    imgUrl: pappaReact,
+    job: 'Frontend Developer',
+    title: 'Pappa React',
   },
   // {
   //   id: 'world-5',
