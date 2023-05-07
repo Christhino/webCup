@@ -55,19 +55,19 @@ export const navLinksFr = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Spécialiste dans l'analyse des rêves",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "L'oracle des prédictions",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Fournir des résultats personnalisés",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: " Thérapie basées sur les rêves",
     icon: creator,
   },
 ];
