@@ -50,7 +50,7 @@ const Partenaire = () => {
             
             <div className="flex flex-col rounded-md justify-center items-center uppercase bg-white text-white hidden h-60 min-h-full 2xl:flex 2xl:row-span-2 2xl:col-span-1 2xl:col-start-6 2xl:row-start-1">
             
-            <img src={instit} alt="mdpt" className="w-full h-full rounded-md object-contain" />
+            <img src={engenog} alt="nexta" className="w-full h-full object-contain rounded-md" />
             </div>
         
         </div>
@@ -62,10 +62,10 @@ const Partenaire = () => {
             <img src={nect} alt="mdpt" className="w-full h-full rounded-md object-contain" />
             </div>
             <div className="flex flex-col rounded-md justify-center items-center uppercase bg-white text-white hidden h-60 min-h-full lg:flex lg:col-span-1 lg:col-start-4 lg:row-start-2 xl:col-span-2">
-            <img src={inclu} alt="mdpt" className="w-full h-full rounded-md object-contain" />
+            <img src={engenog} alt="mdpt" className="w-full h-full rounded-md object-contain" />
             </div>
             <div className="flex flex-col rounded-md justify-center items-center uppercase bg-white text-white hidden h-60 min-h-full lg:flex lg:col-span-1 lg:col-start-4 lg:row-start-2 xl:col-span-2">
-            <img src={engenog} alt="mdpt" className="w-full h-full rounded-md object-contain" />
+            <img src={inclu} alt="mdpt" className="w-full h-full rounded-md object-contain" />
             </div>
         </div>
       </div>
