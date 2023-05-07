@@ -1,7 +1,7 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-import { pose } from "../assets";
+import { dreamInstitute, logo, pose } from "../assets";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -46,9 +46,12 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] leading-[30px]"
       >
         <FormattedMessage id="national-dream-institute-intro" />
+        <div className="flex justify-center mt-10">
+          <img src={dreamInstitute} />
+        </div>
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 mb-20">
@@ -60,7 +63,7 @@ const About = () => {
       <div className="grid grid-cols-2 gap-2">
         <div className="col-span-1">
           <img
-            src={pose}
+            src={logo}
             alt="github"
             className="onix w-[600px] h-full object-contain"
           />
