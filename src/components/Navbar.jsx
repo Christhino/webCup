@@ -2,10 +2,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks, navLinksFr } from "../constants";
 import { logo, menu, close } from "../assets";
 import { useLang } from "../translate/provider/I18nProvider";
 import { MdTranslate } from "react-icons/md";
+import { useIntl } from "react-intl";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
@@ -35,6 +36,8 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
+  const { locale } = useIntl();
 
   return (
     <nav
@@ -58,7 +61,7 @@ const Navbar = () => {
         </Link>
  
         <ul className="list-none hidden sm:flex flex-row gap-10">
-          {navLinks.map((nav) => (
+          {(locale === 'fr' ? navLinksFr : navLinks).map((nav) => (
             <li
               key={nav.id}
               className={`${
