@@ -21,18 +21,41 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import nexta from  "./NEXTA.png"
+import mndpt from  "./MNDPT.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
+import  novity  from "./NOVITY.png"
+import  telma  from  "./TELMA.png";
+import carrent from "./current.jpg";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-
+import full  from "./Fulldigits.png"
+import tripguide from "./mahita.jpg";
+import pulse from "./PULSE.png"
+import ph  from "./P4H.png"
+import  instit  from "./institu.png"
+import  eng  from "./BOCASAY.png"
+import  nect from  "./NEXOURCES.png"
+import  inclu  from "./INCLUSIV.png"
+import engenog  from "./ingenosya2.png"
+import yeys  from "./mahita.jpg"
 export {
   logo,
+  yeys,
+  engenog,
+  inclu,
+  nect,
+  eng,
+  instit,
+  ph,
+  pulse,
+  full,
+  telma,
+  novity,
+  mndpt,
+  nexta,
   backend,
   creator,
   mobile,

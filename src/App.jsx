@@ -12,7 +12,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
-  National
+  Partenaire
 } from "./components";
 const App = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -65,9 +65,11 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          <Tech />
           <Feedbacks />
+          <Tech />
           <Works />
+
+          <Partenaire/>
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />

@@ -1,6 +1,9 @@
 import { BallCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { motion } from 'framer-motion';
+import styles from '../styles'; 
+
 
 const Tech = () => {
   return (
@@ -12,6 +15,7 @@ const Tech = () => {
           </div>
         ))}
       </div>
+
     </>
   );
 };

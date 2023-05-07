@@ -9,12 +9,14 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import National from "./Nationals"
-
+import Partenaire from "./Partenariat"
+import yeys from  "./Works"
 export {
   Hero,
   Navbar,
   National,
   About,
+  Partenaire,
   Tech,
   Experience,
   Works,
