@@ -16,7 +16,7 @@ export default function TextInput({textInput, onChange, onSubmit, waiting, selec
           />
           { waiting ? 
           <button className="bg-gray-300 p-2 rounded w-full text-white text-sm px-3" type="submit" disabled>
-            <img src="loading.png" alt="loading icon" className="animate-spin w-4 h-4 mr-2 inline" />
+            {/*<img src="loading.png" alt="loading icon" className="animate-spin w-4 h-4 mr-2 inline" />*/}
             Un instant je suis entrain d'etudier ton cas
           </button>
           : 
