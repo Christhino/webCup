@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import Cursor from "./components/Curserur";
+import  Loading  from "./components/Loading"
 import {
   About,
   Contact,
@@ -12,9 +12,14 @@ import {
   Tech,
   Works,
   StarsCanvas,
-  Partenaire
+  Partenaire,
+  Input
 } from "./components";
 const App = () => {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  
   const [mousePosition, setMousePosition] = useState({
     x: 0,
     y: 0
@@ -57,7 +62,7 @@ const App = () => {
 
   return (
     <BrowserRouter>
-   
+      
         <div className="relative z-0 bg-primary" onMouseEnter={textEnter} onMouseLeave={textLeave}>
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
@@ -68,7 +73,7 @@ const App = () => {
           <Feedbacks />
           <Tech />
           <Works />
-
+          <Input/>
           <Partenaire/>
           <div className="relative z-0">
             <Contact />
@@ -76,8 +81,8 @@ const App = () => {
           </div>
         </div>
      
-      <Cursor
-      />
+      {/* <Cursor
+      /> */}
     </BrowserRouter>
   );
 };

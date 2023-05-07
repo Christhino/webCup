@@ -11,11 +11,15 @@ import CanvasLoader from "./Loader";
 import National from "./Nationals"
 import Partenaire from "./Partenariat"
 import ExploreCard from  "./ExploreCard"
+import TextInput from "./TextInput"
+import  Input from  "./Input"
 import { TitleText, TypingText } from './CustomTexts';
 export {
   Hero,
   TitleText,
   TypingText,
+  TextInput,
+  Input,
   Navbar,
   ExploreCard,
   National,

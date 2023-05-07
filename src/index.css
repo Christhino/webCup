@@ -227,3 +227,66 @@
     display: none;
    }
 }
+
+#customCursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 999999;
+  border-radius: 50%;
+  pointer-events: none;
+  background-color: #fff;
+  transition: transform 0.35s;
+  mix-blend-mode: exclusion;
+  transition: all 0.25s cubic-bezier(0.3, 0.71, 0.39, 0.94);
+}
+
+#customCursor.on-link {
+  width: 90px;
+  height: 90px;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1000px){
+  #customCursor {
+      display: none;
+  }
+}
+
+body > .overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  pointer-events: none;
+}
+
+body > .overlay > div {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0s;
+}
+
+body > .overlay > div:nth-child(1) {
+  background-color: #0066FF;
+}
+
+body > .overlay > div:nth-child(2) {
+  background-color: #0e001a;
+  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0.3s;
+}
+
+body > .overlay > div:nth-child(3) {
+  opacity: 0.3;
+  background-color: #DB00FF;
+  transition: all 0.9s cubic-bezier(0.86, 0, 0.07, 1) 0.4s;
+}
+
+body > .overlay.loaded > div {
+  transform: translateY(-100%);
+}
