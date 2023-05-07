@@ -41,7 +41,7 @@ import  nect from  "./NEXOURCES.png"
 import  inclu  from "./INCLUSIV.png"
 import engenog  from "./ingenosya2.png"
 import yeys  from "./mahita.jpg"
-
+import thix from  "./thino.jpg"
 import  brain from  "./brain.jpg"
 import  predicat  from "./mahita.jpg"
 import  onc from  "./onc.jpg"
@@ -49,7 +49,7 @@ import iaRobot  from "./iaRobot.jpg"
 
 export {
   logo,
-
+  thix,
   brain,
   predicat,
   onc,

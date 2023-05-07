@@ -9,19 +9,11 @@ import { exploreWorlds } from '../constants';
 import { ExploreCard, TitleText, TypingText } from '../components';
 import { FormattedMessage } from 'react-intl';
 
-const Tech = () => {
+const Team = () => {
   const [active, setActive] = useState('world-2');
   return (
     <>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((technology) => (
-          <div className="w-28 h-28" key={technology.name}>
-            <BallCanvas icon={technology.icon} />
-          </div>
-        ))}
-      </div>
-      
-      {/* <motion.div
+      <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
@@ -44,10 +36,10 @@ const Tech = () => {
             />
           ))}
         </div>
-      </motion.div> */}
-
+      </motion.div>
     </>
   );
 };
 
-export default SectionWrapper(Tech, "tech");
+export default SectionWrapper(Team, "team");
+

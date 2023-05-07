@@ -13,8 +13,11 @@ import {
   Works,
   StarsCanvas,
   Partenaire,
-  Input
+  Input,
+  Footer
 } from "./components";
+import Features from "./components/Features";
+import Team from "./components/Team";
 const App = () => {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -72,13 +75,16 @@ const App = () => {
           <Experience />
           <Feedbacks />
           <Tech />
-          <Works />
           <Input/>
+          <Works />
+          <Features />
           <Partenaire/>
+          <Team />
           <div className="relative z-0">
             <Contact />
             <StarsCanvas />
           </div>
+          <Footer/>
         </div>
      
       {/* <Cursor

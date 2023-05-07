@@ -13,9 +13,11 @@ import Partenaire from "./Partenariat"
 import ExploreCard from  "./ExploreCard"
 import TextInput from "./TextInput"
 import  Input from  "./Input"
+import  Footer from  "./Footer"
 import { TitleText, TypingText } from './CustomTexts';
 export {
   Hero,
+  Footer,
   TitleText,
   TypingText,
   TextInput,

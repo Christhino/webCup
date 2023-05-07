@@ -33,7 +33,7 @@ const FeedbackCard = ({
       <p className="text-white font-black text-[48px]">"</p>
   
       <div className="mt-1">
-        <p className="text-white tracking-wider text-[18px]">{selectedLang === "fr" ? descriptionFr :descriptionEn}</p>
+        <p className="text-white text-secondary text-[18px]">{selectedLang === "fr" ? descriptionFr :descriptionEn}</p>
   
         <div className="mt-7 flex justify-between items-center gap-1">
           <div className="flex-1 flex flex-col">
@@ -77,7 +77,7 @@ const Feedbacks = () => {
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      <div className={`${styles.paddingX} -mt-20 pb-14 text-secondary  flex flex-wrap gap-7`}>
         {temoins.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}

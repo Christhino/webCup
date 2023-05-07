@@ -290,3 +290,8 @@ body > .overlay > div:nth-child(3) {
 body > .overlay.loaded > div {
   transform: translateY(-100%);
 }
+
+.tracking-wider {
+  color: transparent !important;
+  -webkit-text-stroke: .7px #FFF !important;
+}
