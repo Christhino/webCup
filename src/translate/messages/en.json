@@ -6,12 +6,6 @@
   "onirix-workflow-subtitle": "Onirix workflow",
   "national-dream-institute": "National dream institute",
   "national-dream-institute-intro": "L'Institut International des Rêves est un centre de recherche et de développement dédié à l'étude des rêves et de leur signification. Notre équipe de chercheurs passionnés travaille sans relâche pour découvrir les secrets cachés dans les rêves et les utiliser pour aider les gens à mieux comprendre leur vie.<br />Nous croyons que les rêves sont un moyen de communication important entre notre esprit conscient et notre subconscient, et que leur analyse peut fournir des indices sur des événements futurs et des problèmes émotionnels et psychologiques sous-jacents.",
-  "onirix-workflow-1-title": "Data Collection",
-  "onirix-workflow-1-description": "Firstly, Onirix collects data on its users' dreams using its data collection algorithms. These algorithms gather information such as the type of dream, associated emotions, and relevant details such as people, places, and objects involved in the dream.",
-  "onirix-workflow-2-title": "Data Analysis",
-  "onirix-workflow-2-description": "Once the data is collected, Onirix analyzes it using its data processing algorithms. These algorithms look for patterns and connections in the data to identify hidden meanings in the dreams.",
-  "onirix-workflow-3-title": "Interpretation of Results",
-  "onirix-workflow-3-description": "After analyzing the data, Onirix interprets the results to identify hidden meanings in the dreams. Researchers at the International Institute of Dreams work closely with Onirix to interpret the results and provide personalized prophetic predictions for each user.",
-  "onirix-workflow-4-title": "Provide Personalized Results",
-  "onirix-workflow-4-description": "Finally, Onirix provides personalized results to each user based on the analysis and interpretation of their dream data. The results include prophetic predictions to help users anticipate their future, as well as useful information about upcoming events."
+  "nav-about": "About",
+  "nav-contact": "Contact"
 }
