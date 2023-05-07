@@ -4,6 +4,10 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import { useState } from "react";
+import { useEffect } from "react";
+import { listeTemoins } from "../modules/temoins/api";
+import { useLang } from "../translate/provider/I18nProvider";
 
 const FeedbackCard = ({
   index,
@@ -11,38 +15,58 @@ const FeedbackCard = ({
   name,
   designation,
   company,
+  descriptionFr,
+  descriptionEn,
+  adress,
+  age,
+  id,
+  prenom,
+  nom,
   image,
-}) => (
-  <motion.div
-    variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
-  >
-    <p className="text-white font-black text-[48px]">"</p>
-
-    <div className="mt-1">
-      <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
-
-      <div className="mt-7 flex justify-between items-center gap-1">
-        <div className="flex-1 flex flex-col">
-          <p className="text-white font-medium text-[16px]">
-            <span className="blue-text-gradient">@</span> {name}
-          </p>
-          <p className="mt-1 text-secondary text-[12px]">
-            {designation} of {company}
-          </p>
+}) => {
+  const {selectedLang} = useLang()
+  return (
+    <motion.div
+      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      className="bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full"
+    >
+      <p className="text-white font-black text-[48px]">"</p>
+  
+      <div className="mt-1">
+        <p className="text-white tracking-wider text-[18px]">{selectedLang === "fr" ? descriptionFr :descriptionEn}</p>
+  
+        <div className="mt-7 flex justify-between items-center gap-1">
+          <div className="flex-1 flex flex-col">
+            <p className="text-white font-medium text-[16px]">
+              <span className="blue-text-gradient">@</span> {nom}
+            </p>
+            <p className="mt-1 text-secondary text-[12px]">
+              {prenom} of {adress}
+            </p>
+          </div>
+  
+          <img
+            src={image}
+            alt={`feedback_by-${nom}`}
+            className="w-10 h-10 rounded-full object-cover"
+          />
         </div>
-
-        <img
-          src={image}
-          alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
-        />
       </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+}
 
 const Feedbacks = () => {
+  const [temoins,setTemoins] = useState([])
+  useEffect(() => {
+    const load = async () => {
+      const data = await listeTemoins()
+      if(data) setTemoins(data)
+      console.log(data); 
+    }
+    load()
+  }, [])
+  
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
       <div
@@ -54,7 +78,7 @@ const Feedbacks = () => {
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
+        {temoins.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
