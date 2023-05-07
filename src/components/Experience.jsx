@@ -8,10 +8,10 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences, experiencesEnglish } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage, useIntl } from "react-intl";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -58,6 +58,9 @@ const ExperienceCard = ({ experience }) => {
 };
 
 const Experience = () => {
+
+  const { locale } = useIntl();
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -67,7 +70,7 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
+          {(locale === 'fr' ? experiences : experiencesEnglish).map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}
         </VerticalTimeline>
