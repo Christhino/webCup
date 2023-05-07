@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import pose from "./pose.png";
 import ia  from "./ai.png";
+import dreamInstitute from "./inter_institute.png"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -46,7 +47,7 @@ import  brain from  "./brain.jpg"
 import  predicat  from "./mahita.jpg"
 import  onc from  "./onc.jpg"
 import iaRobot  from "./iaRobot.jpg"
-
+import  kalanoor  from  "./kalanoor.png"
 export {
   logo,
   thix,
@@ -54,7 +55,7 @@ export {
   predicat,
   onc,
   iaRobot,
-  
+  kalanoor,
   yeys,
   engenog,
   inclu,
@@ -96,5 +97,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  ia
+  ia,
+  dreamInstitute
 };

@@ -45,7 +45,7 @@ const Features = () => {
             </motion.div>
 
             <div className="w-full flex">
-                <motion.p
+                {/* <motion.p
                     variants={fadeIn("", "", 0.1, 1)}
                     className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
                 >
@@ -54,7 +54,7 @@ const Features = () => {
                     links to code repositories and live demos in it. It reflects my
                     ability to solve complex problems, work with different technologies,
                     and manage projects effectively.
-                </motion.p>
+                </motion.p> */}
             </div>
 
             <div className="mt-20 flex flex-wrap gap-7">
@@ -64,6 +64,10 @@ const Features = () => {
                 <ProjectCard name={intl.formatMessage({ id: 'feature-4-title' })} description={intl.formatMessage({ id: 'feature-4-description' })} />
                 <ProjectCard name={intl.formatMessage({ id: 'feature-5-title' })} description={intl.formatMessage({ id: 'feature-5-description' })} />
                 <ProjectCard name={intl.formatMessage({ id: 'feature-6-title' })} description={intl.formatMessage({ id: 'feature-6-description' })} />
+            </div>
+
+            <div>
+                <a href="#"><FormattedMessage id="cta-test" /></a>
             </div>
         </>
     );
