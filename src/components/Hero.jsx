@@ -17,11 +17,10 @@ const Hero = () => {
 
           <div>
             <h1 className={`${styles.heroHeadText} text-white titre`}>
-            Les rêves peuvent révéler votre avenir,   <span className="text-[#915EFF]">explorez-en les signification</span>
+            <FormattedMessage id="header-part-1"/>   <span className="text-[#915EFF]"><FormattedMessage id="header-part-2" /></span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-white-100 intro`}>
-            Explorez les profondeurs de votre subconscient grâce à la technologie révolutionnaire Onirix.  <br className="sm:block hidden" />
-            Découvrez les messages cachés dans vos rêves et obtenez des prédictions personnalisées sur les événements à venir. 
+            <FormattedMessage id="header-description-part-1" />  <br className="sm:block hidden" /> <FormattedMessage id="header-description-part-2" />
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-5">
