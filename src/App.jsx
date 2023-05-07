@@ -14,6 +14,7 @@ import {
   StarsCanvas,
   Partenaire
 } from "./components";
+import Features from "./components/Features";
 const App = () => {
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -68,7 +69,7 @@ const App = () => {
           <Feedbacks />
           <Tech />
           <Works />
-
+          <Features />
           <Partenaire/>
           <div className="relative z-0">
             <Contact />

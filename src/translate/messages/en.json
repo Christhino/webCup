@@ -11,5 +11,18 @@
   "header-part-1": "Dreams can reveal your future,",
   "header-part-2": "explore their meanings.",
   "header-description-part-1": "Explore the depths of your subconscious with the revolutionary technology of Onirix.",
-  "header-description-part-2": "Discover the hidden messages in your dreams and get personalized predictions about upcoming events."
+  "header-description-part-2": "Discover the hidden messages in your dreams and get personalized predictions about upcoming events.",
+  "features": "Features of Onirix",
+  "feature-1-title": "Analysis of emotions in dreams",
+  "feature-1-description": "Onirix could use emotion recognition algorithms to detect the feelings present in users' dreams.",
+  "feature-2-title": "Virtual reality integration",
+  "feature-2-description": "Onirix could integrate virtual reality elements to allow users to experience things related to their dreams. For example, if a user dreams of flying, Onirix could offer a virtual reality flying experience to enhance the feeling and help better interpret the dream.",
+  "feature-3-title": "Suggestions for actions to take",
+  "feature-3-description": "In addition to predicting future events, Onirix could also provide suggestions for actions to take to help users better manage these events.",
+  "feature-4-title": "Group analysis",
+  "feature-4-description": "Onirix could offer group analysis to allow users to compare their dreams with those of other people with similar profiles.",
+  "feature-5-title": "Music integration",
+  "feature-5-description": "Onirix could integrate music elements to help users better remember their dreams and interpret them more effectively.",
+  "feature-6-title": "Dream-based therapy suggestions",
+  "feature-6-description": "Onirix could offer therapy suggestions and resources for users based on their dreams and predictions."
 }
