@@ -8,6 +8,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { listeTemoins } from "../modules/temoins/api";
 import { useLang } from "../translate/provider/I18nProvider";
+import { FormattedMessage } from "react-intl";
 
 const FeedbackCard = ({
   index,
@@ -73,8 +74,8 @@ const Feedbacks = () => {
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say</p>
-          <h2 className={styles.sectionHeadText}>Testimonials.</h2>
+          <p className={styles.sectionSubText}><FormattedMessage id="testimonials-sub" /></p>
+          <h2 className={styles.sectionHeadText}><FormattedMessage id="testimonials" /></h2>
         </motion.div>
       </div>
       <div className={`${styles.paddingX} -mt-20 pb-14 text-secondary  flex flex-wrap gap-7`}>
