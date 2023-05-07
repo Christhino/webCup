@@ -128,11 +128,13 @@ const technologies = [
 ];
 
 const experiencesEnglish = [{
-  title: "Data Collection", company_name: "Starbucks", icon: starbucks, iconBg: "#383E56", date: "March 2020 - April 2021", points: ["First, Onirix collects data about its users' dreams using its data collection algorithms.", "These algorithms gather information such as dream type, associated emotions, and relevant details such as people, places, and objects involved in the dream.",],
+  title: "Data Collection", 
+  // company_name: "Starbucks",
+   icon: starbucks, iconBg: "#383E56", date: "March 2020 - April 2021", points: ["First, Onirix collects data about its users' dreams using its data collection algorithms.", "These algorithms gather information such as dream type, associated emotions, and relevant details such as people, places, and objects involved in the dream.",],
 },
 {
   title: "Data Analysis",
-  company_name: "Tesla",
+  // company_name: "Tesla",
   icon: tesla,
   iconBg: "#E6DEDD",
   date: "Jan 2021 - Feb 2022",
@@ -143,7 +145,7 @@ const experiencesEnglish = [{
 },
 {
   title: "Results Interpretation",
-  company_name: "Shopify",
+  // company_name: "Shopify",
   icon: shopify,
   iconBg: "#383E56",
   date: "Jan 2022 - Jan 2023",
@@ -154,7 +156,7 @@ const experiencesEnglish = [{
 },
 {
   title: "Personalized Results",
-  company_name: "Meta",
+  // company_name: "Meta",
   icon: meta,
   iconBg: "#E6DEDD",
   date: "Jan 2023 - Present",
@@ -168,7 +170,7 @@ const experiencesEnglish = [{
 const experiences = [
   {
     title: "Collecte des données",
-    company_name: "Starbucks",
+    // company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
     // date: "March 2020 - April 2021",
@@ -179,7 +181,7 @@ const experiences = [
   },
   {
     title: "Analyse des données",
-    company_name: "Tesla",
+    // company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
     // date: "Jan 2021 - Feb 2022",
@@ -190,7 +192,7 @@ const experiences = [
   },
   {
     title: "Interprétation des résultats",
-    company_name: "Shopify",
+    // company_name: "Shopify",
     icon: shopify,
     iconBg: "#383E56",
     // date: "Jan 2022 - Jan 2023",
@@ -201,7 +203,7 @@ const experiences = [
   },
   {
     title: "Fournir des résultats personnalisés",
-    company_name: "Meta",
+    // company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
     // date: "Jan 2023 - Present",
