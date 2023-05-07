@@ -10,10 +10,14 @@ import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import National from "./Nationals"
 import Partenaire from "./Partenariat"
-import yeys from  "./Works"
+import ExploreCard from  "./ExploreCard"
+import { TitleText, TypingText } from './CustomTexts';
 export {
   Hero,
+  TitleText,
+  TypingText,
   Navbar,
+  ExploreCard,
   National,
   About,
   Partenaire,

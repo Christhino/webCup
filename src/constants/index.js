@@ -23,8 +23,12 @@ import {
   jobit,
   tripguide,
   threejs,
+   
+  brain,
+  predicat,
+  onc,
+  iaRobot,
 
-  
 } from "../assets";
 
 export const navLinks = [
@@ -257,32 +261,33 @@ const projects = [
 ];
 
 
+
 export const exploreWorlds = [
   {
     id: 'world-1',
-    imgUrl: '/planet-01.png',
+    imgUrl: brain,
     title: 'The Hogwarts',
   },
   {
     id: 'world-2',
-    imgUrl: '',
+    imgUrl: predicat,
     title: 'The Upside Down',
   },
   {
     id: 'world-3',
-    imgUrl: '/planet-03.png',
+    imgUrl: onc,
     title: 'Kadirojo Permai',
   },
   {
     id: 'world-4',
-    imgUrl: '/planet-04.png',
+    imgUrl: iaRobot,
     title: 'Paradise Island',
   },
-  {
-    id: 'world-5',
-    imgUrl: '/planet-05.png',
-    title: 'Hawkins Labs',
-  },
+  // {
+  //   id: 'world-5',
+  //   imgUrl: '/planet-05.png',
+  //   title: 'Hawkins Labs',
+  // },
 ];
 
 export const startingFeatures = [
