@@ -25,6 +25,10 @@ const Team = () => {
           title={<><FormattedMessage id="our-team" /></>}
           textStyles="text-center"
         />
+        <p>
+            <FormattedMessage id="our-team-desc" />
+        </p>
+
         <div className="mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5">
           {exploreWorlds.map((world, index) => (
             <ExploreCard
@@ -42,4 +46,3 @@ const Team = () => {
 };
 
 export default SectionWrapper(Team, "team");
-

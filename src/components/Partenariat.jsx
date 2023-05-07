@@ -5,13 +5,14 @@ import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 import { motion } from "framer-motion";
 import { nexta,mndpt,novity,telma,full,pulse,ph,instit,eng,nect,inclu,engenog} from "../assets";
+import { FormattedMessage } from "react-intl";
 
 const Partenaire = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Partenaires</h2>
+        <p className={styles.sectionSubText}><FormattedMessage id="partners-sub" /></p>
+        <h2 className={styles.sectionHeadText}><FormattedMessage id="partners" /></h2>
       </motion.div>
      
       <div className="m-0 p-12 flex flex-col justify-center">

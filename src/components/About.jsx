@@ -68,13 +68,13 @@ const About = () => {
         <div className="col-span-1">
           <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>Que fait Onirix ?</h2>
+            <h2 className={styles.sectionHeadText}><FormattedMessage id="onirix-intro-question" /></h2>
           </motion.div>
           <motion.p
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
           >
-            Explorez les profondeurs de votre subconscient grâce à la technologie révolutionnaire Onirix. Découvrez les messages cachés dans vos rêves et obtenez des prédictions personnalisées sur les événements à venir. Les symboles et les significations de vos rêves pourraient révéler des secrets sur votre vie, que notre équipe d'experts en analyse de rêves peut vous aider à interpréter. Plongez dans le monde fascinant de l'interprétation des rêves et découvrez ce que votre avenir vous réserve.
+            <FormattedMessage id="onirix-intro-desc" />
           </motion.p>
         </div>
       </div>
